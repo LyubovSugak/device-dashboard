@@ -1,0 +1,14 @@
+/* Add your CSS here. This file should */
+/* automatically hot reload into the app on save */
+
+td, tr {
+	padding: 4px; 
+	border: 1px #CCC solid; 
+	width: 100px;
+	cursor: pointer;
+}
+tbody {
+	
+}
+
+input {margin-bottom: 5px; padding: 2px 3px; width: 209px;}
