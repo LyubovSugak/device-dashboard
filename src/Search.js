@@ -6,7 +6,7 @@ export function Search({update, devices}) {
 		const filtered = devices.filter(item => {
 			return item.name.toLowerCase().includes(value);
 		})
-		update(filtered) 
+		update(filtered);
 	}
 	return (
 		<div>

@@ -1,14 +1,68 @@
 /* Add your CSS here. This file should */
 /* automatically hot reload into the app on save */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	background-color: #444; 
+}
 
-td, tr {
-	padding: 4px; 
-	border: 1px #CCC solid; 
-	width: 100px;
+#main-container {
+	padding-left: 30px;
+	padding-top: 30px;
+	font-family: 'Slabo 27px', serif;
+}
+
+#main-container h1 {
+	color: #ea5266;
+	padding-bottom: 20px;
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+
+input {
+	margin-bottom: 20px; 
+	padding: 2px 3px; 
+	width: 209px;
+}
+
+table {
+	width: 55%;
+	color: white;
+	border-collapse: collapse;
 	cursor: pointer;
 }
-tbody {
-	
+
+table, th, td {
+	border: 1px white solid; 
+	padding: 5px;
+	padding-right: 25px;
+	color: white;
+}
+.active {
+	color: #ea5266;
 }
 
-input {margin-bottom: 5px; padding: 2px 3px; width: 209px;}
+#counter-container {
+	padding-top: 30px;
+}
+#counter-container p {
+	color: white;
+	padding-top: 4px;
+}
+
+#counter-container h2 {
+	font-family: 'Lato';
+	color: #ea5266;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+#counter-container div {
+	display: flex;
+}
+    
+
+
+/*//  w W /*/
+
