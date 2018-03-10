@@ -112,7 +112,7 @@ function patchDeviceReading(req, res, next) {
         res.send(400);
     }
     try {
-        // const timeout = Math.floor(Math.random() * 5000);
+        const timeout = Math.floor(Math.random() * 5000);
         const failRate = Math.floor(Math.random() * 100);
         if (failRate > 60) {
             res.send(400, 'device state patch failed');
@@ -120,7 +120,7 @@ function patchDeviceReading(req, res, next) {
         }
         const targetIndex = deviceReadings.findIndex(el => el.name === req.params.readingName);
         deviceReadings[targetIndex].active = req.query.active === "true";
-        setTimeout(() => { res.send(200, 'OK') });
+        setTimeout(() => { res.send(200, 'OK'), timeout});
     } 
     catch(e) {
         console.log(e);

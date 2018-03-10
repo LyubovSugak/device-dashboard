@@ -34,11 +34,15 @@ table {
 	cursor: pointer;
 }
 
-table, th, td {
+th, td {
 	border: 1px white solid; 
 	padding: 5px;
 	padding-right: 25px;
 	color: white;
+}
+th div{
+	float: right;
+	padding-left: 5px;
 }
 .active {
 	color: #ea5266;
@@ -47,9 +51,10 @@ table, th, td {
 #counter-container {
 	padding-top: 30px;
 }
+
 #counter-container p {
 	color: white;
-	padding-top: 4px;
+	padding-top: 5px;
 }
 
 #counter-container h2 {
@@ -61,6 +66,15 @@ table, th, td {
 #counter-container div {
 	display: flex;
 }
+
+.arrow-top {
+  border-top-color: orangered;  
+  border-bottom: 0;
+ }
+ .arrow-bottom {
+  border-bottom-color: orangered;  
+  border-top: 0;
+ }
     
 
 
